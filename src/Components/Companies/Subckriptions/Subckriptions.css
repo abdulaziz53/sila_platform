@@ -1,0 +1,143 @@
+/* Subckriptions main style */
+.subc_main_cont {
+  width: 98%;
+  height: 100%;
+}
+
+.main_cont__inner {
+  width: 100%;
+  height: 100%;
+  /* margin-left: 20px; */
+  background-color: #ffffff;
+  margin-top: -6px;
+}
+
+.subc_filter__cont {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 7px;
+  /* margin-left: 20px; */
+  border-top: 3px solid #2d4f82;
+  /* padding-left: 20px; */
+}
+
+.subc_inp_box_1 {
+  width: 15%;
+}
+.subc_inp_box_2 {
+  width: 20%;
+}
+.subc_inp_box_3 {
+  width: 15%;
+}
+
+.subc_inp_box input {
+  border-radius: 5px;
+}
+
+.subc_select_box select {
+  font-size: 12px;
+}
+
+.subc_select option {
+  font-size: 14px;
+}
+/*  */
+
+/* ! Resizable table */
+.sub_table {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns:
+    minmax(100px, 3fr)
+    minmax(200px, 5fr)
+    minmax(150px, 4fr)
+    minmax(100px, 3fr)
+    minmax(100px, 3fr)
+    minmax(100px, 3fr)
+    minmax(150px, 1fr)
+    minmax(150px, 3fr)
+    minmax(150px, 1fr);
+}
+
+/* ! Resizable table end */
+
+/*  */
+
+.subc_inp_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53px;
+}
+
+.subc_inp_box label {
+  color: rgba(23, 23, 23, 0.76);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #004665;
+}
+
+.subc_inp_box input {
+  width: 100%;
+  font-size: 14px;
+}
+.subc_inp_box input::placeholder {
+  color: rgba(101, 101, 101, 0.8);
+}
+
+.subc_input {
+  height: 35px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+.subc_select_box {
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subc_select {
+  height: 35px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background: none;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  color: rgba(101, 101, 101, 0.8);
+}
+
+.subc_select_box label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #004665;
+}
+
+@media (max-width: 1520px) {
+  .sub_table {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    overflow: auto;
+    grid-template-columns:
+      minmax(125px, 3fr)
+      minmax(200px, 5fr)
+      minmax(150px, 4fr)
+      minmax(125px, 3fr)
+      minmax(125px, 3fr)
+      minmax(125px, 3fr)
+      minmax(150px, 1fr)
+      minmax(150px, 3fr)
+      minmax(150px, 1fr);
+  }
+}

@@ -1,0 +1,246 @@
+/* ! Users add btn start */
+
+.users_add_btn_box {
+  background: none;
+  /* border: 3px solid #fff; */
+  color: #dcdcdc;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  width: 120px;
+  height: 30px;
+  /* border: 3px solid #dcdcdc; */
+  /* border-radius: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.users_add_btn {
+  width: 120px;
+  height: 30px;
+  /* background: rgba(146, 167, 199, 0.28); */
+  background: none;
+  border: 3px solid #dcdcdc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add_btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #dcdcdc;
+  text-align: center;
+  padding: 0;
+}
+
+.adt_add_btn {
+  display: none;
+}
+
+/* ! Users add btn end */
+
+/* ! Dialog Content start */
+
+/* Top */
+
+.add_users_title {
+  width: 500px;
+  height: 65px;
+  border-bottom: 3px solid #004665;
+  display: flex;
+  align-items: center;
+}
+
+.add_users_title p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin-left: 33px;
+}
+
+/* main box */
+.us_main_box {
+  width: 500px;
+  height: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.us_input {
+  width: 485px;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.us_cont_password i {
+  position: relative;
+  left: -5%;
+  color: #004665;
+}
+
+.us_input_top {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.us_inp_cont {
+  width: 230px;
+  height: 53px;
+  margin-bottom: 15px;
+}
+
+.us_inp_cont label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.us_inp_cont input {
+  width: 215px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+}
+
+.us_cont_password {
+  width: 480px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.us_cont_password input {
+  width: 226px;
+  height: 30px;
+  border: none;
+  border-bottom: 3px solid #004665;
+}
+
+.us_cont_password input + input {
+  margin-left: 7px;
+}
+
+.select_cont {
+  width: 339px;
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.select_cont select {
+  width: 325px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #004665;
+}
+
+/* bottom */
+.us_btm {
+  width: 500px;
+  height: 64px;
+  border-top: 3px solid #004665;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.us_btm button {
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+.us_close_btn {
+  width: 53px;
+}
+
+.us_save_btn {
+  width: 41px;
+  margin: 17px 30px 17px 25px;
+}
+
+input::placeholder {
+  color: #004665;
+}
+
+/* ! Dialog Content end */
+
+/* ! */
+
+.users_confirm {
+  width: 500px;
+  height: 461px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -1000px;
+  left: calc(50% - 220px);
+  border-radius: 15px;
+}
+
+.users_confirm.users_show {
+  top: calc(40% - 140px);
+}
+
+.users_confirm_content {
+  width: 100%;
+  height: 461px;
+}
+
+.users_overlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.users_confirm.users_show + .users_overlay {
+  display: block;
+}
+
+@media all and (max-width: 900px) {
+  .add_btn {
+    display: none;
+  }
+  .users_add_btn {
+    width: 100%;
+    padding: 8px;
+  }
+  .adt_add_btn {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    text-align: center;
+  }
+}

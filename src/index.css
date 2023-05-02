@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  /* margin: 0; */
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+
+  background-color: #f3f3f3;
+  /* background-image: url("../src/Assets/background-gradient.png  "); */
+  background-repeat: no-repeat;
+  background-position: bottom bottom;
+  background-size: cover;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+button,
+i {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  padding-left: 10px;
+}
+select {
+  outline: none;
+  padding-left: 10px;
+}
+
+/*  */
+
+.main_box {
+  width: 93%;
+  height: 100%;
+  background-color: #fff;
+  margin: 20px 0px 0px 100px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ! Resizable table start */
+
+.tab_btn_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 96px; */
+  /* margin-bottom: 4px; */
+}
+
+.resize_table_main {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* background-color: rgba(5, 5, 5, 0.79); */
+  margin-top: -5px;
+}
+
+.container {
+  height: 100%;
+}
+
+.table-wrapper {
+  margin-bottom: 25px;
+  /* border-radius: 6px; */
+  background: #fff;
+  overflow: hidden;
+}
+
+.table_element_th {
+  height: 0px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(146, 167, 199, 0.28);
+}
+
+table thead,
+table tbody,
+table tr {
+  display: contents;
+}
+
+table th {
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 16px 20px;
+  min-width: 84px;
+}
+
+table th span,
+table td span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+table tr td {
+  border-top: 1px solid #ccc;
+}
+
+.resize-handle {
+  display: block;
+  position: absolute;
+  cursor: col-resize;
+  width: 7px;
+  /* height: 53px !important; */
+  right: 0;
+  top: 0;
+  z-index: 1;
+  border-right: 2px solid transparent;
+}
+
+/* .resize-handle:hover {
+  border-color: #ccc;
+} */
+/* .resize-handle.active {
+  border-color: #517ea5;
+} */
+.resize-handle {
+  border-color: #8497a73b;
+}
+
+.resize-handle.active {
+  border-color: #114470;
+}
+
+/* ! Resizable table end */

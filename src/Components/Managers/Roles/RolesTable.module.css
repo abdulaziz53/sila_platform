@@ -1,0 +1,496 @@
+.roles_cont_btn {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.roles_close_btn {
+  width: 53px;
+  height: 30px;
+}
+.roles_save_btn {
+  width: 30px;
+  height: 30px;
+}
+
+.status_close_btn {
+  width: 53px;
+}
+
+.status_save_btn {
+  width: 41px;
+}
+
+/* Edit start */
+
+.addNewRoles {
+  margin-top: 13px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  background: none;
+  font-weight: 600;
+  font-style: 12px;
+  line-height: 15;
+}
+
+/* ! Roles Content start */
+
+.title {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #004665;
+}
+
+.title p {
+  color: #011a38;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Main box */
+
+.main_box {
+  width: 100%;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Top */
+
+.top_input {
+  width: 340px;
+  height: 54px;
+  margin-top: 27px;
+  margin-bottom: 15px;
+}
+
+.top_input label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.role_input {
+  width: 325px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #011a38;
+}
+
+.main_box .role_acc {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: #178ba5;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* Roles Access */
+
+.roles_access {
+  width: 782px;
+  height: 385px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.table_top_first {
+  width: 764px;
+  height: 25px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 200px 100px 150px 100px 100px;
+  /* grid-template-rows: 80px auto 80px; */
+  column-gap: 10px;
+  row-gap: 10px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.table_top_first p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.table_top_second {
+  width: 764px;
+  height: 25px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: start;
+  grid-template-columns: 200px 100px 150px 100px 100px;
+  /* grid-template-rows: 80px auto 80px; */
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.table_top_second__cont {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.table_top_second .table_top_second__cont p {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.table_top_second__cont input {
+  width: 15px;
+  height: 15px;
+  background: #004665;
+}
+
+/* .table_inp {
+    border-color: #004665;
+  } */
+
+/* ! Roles Content end */
+
+/* ! Dialog start */
+
+.roles_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 65px;
+  border-top: 3px solid #004665;
+}
+
+.roles__ok_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.roles_confirm {
+  max-width: 800px;
+  height: 668px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -700px;
+  left: calc(40% - 180px);
+  border-radius: 15px;
+}
+
+.roles_confirm.roles_show {
+  top: calc(65% - 140px);
+}
+
+.roles__confirm_content {
+  width: 100%;
+  height: 668px;
+}
+
+.roles_overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.roles_confirm.roles_show + .roles_overlay {
+  display: block;
+}
+
+.button {
+  background: none;
+  border: 3px solid #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+}
+
+/* ! Dialog end */
+
+/* Status start */
+
+.status_main_block {
+}
+
+.status_cont_btn {
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.confirm__inv_status {
+  width: 450px;
+  height: 236px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(50% - 220px);
+  border-radius: 15px;
+}
+
+.confirm__inv_status.show__inv_status {
+  top: calc(70% - 140px);
+}
+
+.inv_status__confirm-content {
+  width: 450px;
+  height: 236px;
+}
+
+.overlay__inv_status {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm__inv_status.show__inv_status + .overlay__inv_status {
+  display: block;
+}
+
+.inv_input {
+  width: 339px;
+  height: 53px;
+}
+
+.inv_input label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.inv_input input {
+  margin: 0;
+  width: 325px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+}
+
+/* Delete */
+
+.status_close_btn {
+  width: 53px;
+}
+
+.status_save_btn {
+  width: 41px;
+}
+
+.roles_cont_btn {
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.confirm__inv_delete {
+  width: 450px;
+  height: 236px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(50% - 220px);
+  border-radius: 15px;
+}
+
+.confirm__inv_delete.show__inv_delete {
+  top: calc(70% - 10px);
+}
+
+.inv_delete__confirm-content {
+  width: 450px;
+  height: 236px;
+}
+
+.overlay__inv_delete {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm__inv_delete.show__inv_delete + .overlay__inv_delete {
+  display: block;
+}
+
+/* Deleted */
+
+.status_close_btn {
+  width: 53px;
+}
+
+.status_save_btn {
+  width: 41px;
+}
+
+.status_cont_btn {
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.confirm__inv_deleted {
+  width: 450px;
+  height: 236px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(50% - 220px);
+  border-radius: 15px;
+}
+
+.confirm__inv_deleted.show__inv_deleted {
+  top: calc(45% - 140px);
+}
+
+.inv_deleted__confirm-content {
+  width: 450px;
+  height: 236px;
+}
+
+.overlay__inv_deleted {
+  width: 100%;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm__inv_deleted.show__inv_deleted + .overlay__inv_deleted {
+  display: block;
+}
+/* ! */
+
+.ToggleSwitch {
+  background: linear-gradient(#cccccc6b, #eeeeee82);
+  border: 1px solid #004665;
+  height: 1em;
+  width: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.ToggleSwitch .knob {
+  position: relative;
+
+  border: 1px solid #004665;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ffffff;
+  border-radius: 50%;
+  top: 0.05rem;
+  left: 0.1em;
+  transition: left 0.3s ease-out;
+}
+.ToggleSwitch .knob.active {
+  left: 1em;
+  background-color: #004665;
+  width: 0.8em;
+  height: 0.8em;
+}
+
+/* ! */
+
+@media (max-width: 900px) {
+  .roles_confirm {
+    width: 720px;
+    left: calc(33% - 180px);
+  }
+  .roles_access {
+    width: 98%;
+  }
+  .table_top_first {
+    width: 98%;
+  }
+  .table_top_second {
+    width: 98%;
+  }
+}

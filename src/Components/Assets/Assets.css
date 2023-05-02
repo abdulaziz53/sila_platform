@@ -1,0 +1,112 @@
+.ass_inp_box {
+  width: 16%;
+}
+.ass_inp_box2 {
+  width: 12%;
+}
+.ass_inp_box3 {
+  width: 14%;
+}
+
+/* .component_wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000411;
+    transition: background-color 200ms ease-out;
+  }
+  
+  .switch {
+    position: relative;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 20%;
+    transition: background-color 100ms ease-out;
+    z-index: 1;
+  }
+  .switch:before,
+  .switch:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    z-index: 2;
+  }
+  .switch:before {
+    left: -1rem;
+  }
+  .switch:after {
+    right: -1rem;
+  }
+  
+  .toggle_button {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 100ms ease-in-out;
+    z-index: 3; 
+    top: 0.5rem;
+    right: 3.5rem;
+  }
+  
+  .component_wrapper__is_light {
+    background-color: #fcfcfc;
+  }
+  
+  .component_wrapper__is_dark {
+    background-color: #000411;
+  }
+  
+  .switch__is_off {
+    background-color: #ffffff;
+  }
+  
+  .switch__is_on {
+    background-color: #004665;
+  }
+  
+  .toggle_button__position_left {
+    transform: translateX(-1.05rem);
+    background-color: #004665;
+  }
+  
+  .toggle_butto__position_right {
+    transform: translateX(4.05rem);
+  } */
+
+/* !!!!!!!!!!!!!!!!!! */
+
+/* .App {
+    width: 350px;
+    margin: auto;
+  }
+  
+  .ToggleSwitch {
+    background: linear-gradient(#cccccc6b, #eeeeee82);
+    border: 1px solid #004665;
+    height: 1em;
+    width: 2em;
+    border-radius: 1em;
+  }
+  .ToggleSwitch .knob {
+    position: relative;
+    width: 0.9em;
+    height: 0.9em;
+    background: #004665;
+    border-radius: 50%;
+    top: 0.05rem;
+    left: 0.1em;
+    transition: left 0.3s ease-out;
+  }
+  .ToggleSwitch .knob.active {
+    left: 1em;
+    background-color: #ffffff;
+  } */

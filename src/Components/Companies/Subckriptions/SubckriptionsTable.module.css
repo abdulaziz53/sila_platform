@@ -1,0 +1,290 @@
+.sub_inf_title {
+  width: 417px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #004665;
+}
+
+.sub_inf_title p {
+  width: 351px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin: 20px 33px 20px 33px;
+}
+
+.sub_inf__main_block {
+  width: 417px;
+  height: 405px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub_inf__main_inf {
+  width: 377px;
+  height: 233px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 17px 20px 0px 20px;
+}
+
+.sub_inf__left_cont {
+  width: 183px;
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub_inf__right_cont {
+  width: 183px;
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub_inf__left_cont p {
+  width: 175.5px;
+  height: 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+.sub_inf__right_cont p {
+  width: 175.5px;
+  height: 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(28, 36, 52, 0.67);
+}
+
+.sub_inf__right_cont button {
+  width: 141px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+/*  */
+
+.sub_invoice_inf {
+  width: 377px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 10px;
+}
+
+.sub_invoice_inf span + span {
+  margin-left: 20px;
+}
+
+.sub_invoice_inf p {
+  width: 97px;
+  height: 13px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+.sub_unpaid__invoices span {
+  width: 45px;
+  height: 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+.sub_unpaid__invoices {
+  width: 367px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub_unpaid__invoices_btn {
+  display: flex;
+  margin-left: 20px;
+}
+
+.sub_unpaid__invoices button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 30px;
+  background: #ffffff;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #004665;
+  margin-left: 20px;
+}
+
+/*  */
+
+.sub_inf_inp {
+  width: 339px;
+  height: 53px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sub_inf_inp input {
+  width: 325px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border: 3px solid #004665;
+  border-radius: 5px;
+}
+
+/*  */
+
+.subc_tb_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 65px;
+  border-top: 3px solid #004665;
+}
+
+.edit_close_btn {
+  width: 53px;
+}
+
+.edit_save_btn {
+  width: 41px;
+}
+
+.edit_cont_btn {
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+/*  */
+
+.confirm_sub_inf {
+  width: 417px;
+  height: 555px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(50% - 200px);
+  border-radius: 15px;
+}
+
+.confirm_sub_inf.show_sub_inf {
+  top: calc(30% - 140px);
+}
+
+.sub_inf__confirm_content {
+  width: 417px;
+  height: 555px;
+}
+
+.overlay_sub_inf {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm_sub_inf.show_sub_inf + .overlay_sub_inf {
+  display: block;
+}
+
+.button {
+  background: none;
+  border: 3px solid #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+}
+
+/* ! Status */
+
+/* ! Toggle Switch */
+.App {
+  width: 350px;
+  margin: auto;
+}
+
+.ToggleSwitch {
+  background: linear-gradient(#cccccc6b, #eeeeee82);
+  border: 1px solid #004665;
+  height: 1em;
+  width: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.ToggleSwitch .knob {
+  position: relative;
+
+  border: 1px solid #004665;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ffffff;
+  border-radius: 50%;
+  top: 0.05rem;
+  left: 0.1em;
+  transition: left 0.3s ease-out;
+}
+.ToggleSwitch .knob.active {
+  left: 1em;
+  background-color: #004665;
+  width: 0.8em;
+  height: 0.8em;
+}
+
+/* ! */
+
+@media (max-width: 900px) {
+  .overlay_sub_inf {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.ToggleSwitch {
+  background: linear-gradient(#cccccc6b, #eeeeee82);
+  border: 1px solid #004665;
+  height: 1em;
+  width: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.ToggleSwitch .knob {
+  position: relative;
+
+  border: 1px solid #004665;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ffffff;
+  border-radius: 50%;
+  top: 0.05rem;
+  left: 0.1em;
+  transition: left 0.3s ease-out;
+}
+.ToggleSwitch .knob.active {
+  left: 1em;
+  background-color: #004665;
+  width: 0.8em;
+  height: 0.8em;
+}

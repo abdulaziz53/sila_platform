@@ -1,0 +1,57 @@
+.truck_main_content {
+  width: 93%;
+  height: 100%;
+  margin: 13px 96px 0;
+  padding: 0;
+  /* background-color: #fff; */
+}
+
+.truck_inner_cont {
+  width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  /* background-color: rgba(146, 167, 199, 0.28); */
+  margin-bottom: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.truck_select_box {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.truck_select_box select {
+  width: 97%;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(101, 101, 101, 0.8);
+}
+
+/* ! Resize table style */
+.truck_table {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns:
+    minmax(130px, 3fr)
+    minmax(130px, 3fr)
+    minmax(190px, 3fr)
+    minmax(150px, 1fr)
+    minmax(150px, 1fr)
+    minmax(150px, 1fr)
+    minmax(190px, 2fr)
+    minmax(145px, 2fr)
+    minmax(165px, 2fr)
+    minmax(130px, 2fr)
+    minmax(130px, 2fr);
+}

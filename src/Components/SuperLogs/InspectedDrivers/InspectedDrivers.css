@@ -1,0 +1,75 @@
+.inc_dr__main_cont {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: -3px;
+}
+
+.inc_dr__second_cont {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 15px 17px 15px 17px; */
+  /* margin-left: 20px; */
+  border-top: 3px solid #2d4f82;
+}
+
+.inc_dr__inp_box {
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inc_dr__inp_box input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  color: rgba(101, 101, 101, 0.8);
+}
+.inc_dr__inp_box input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(101, 101, 101, 0.8);
+}
+
+.inc_dr__slc_box {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inc_dr__slc_box select {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(101, 101, 101, 0.8);
+}
+
+/*  */
+
+/* ! Resizable table */
+
+.inspected_drivers__table {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns:
+    minmax(90px, 2fr)
+    minmax(136px, 2fr)
+    minmax(133px, 2fr)
+    minmax(183px, 4fr)
+    minmax(109px, 3fr)
+    minmax(200px, 3fr);
+}

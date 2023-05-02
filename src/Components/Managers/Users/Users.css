@@ -1,0 +1,123 @@
+.users_main_cont {
+  width: 98%;
+  height: 100%;
+  /* margin-left: 20px; */
+  margin-top: -1px;
+}
+
+.users_main_inner {
+  width: 100%;
+  background-color: #fff;
+}
+
+.users_second_cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 15px; */
+  /* background-color: rgba(146, 167, 199, 0.28); */
+  border-radius: 20px;
+}
+
+.users_inner_cont {
+  width: 100%;
+  height: 60px;
+  /* padding: 0px 17px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 3px solid #2d4f82;
+}
+
+.us_avt {
+  width: 95% !important;
+  height: 30px !important;
+}
+
+.us_inp_search {
+  width: 20%;
+}
+.us_inp_search2 {
+  width: 15%;
+}
+
+.users_select_box input {
+  width: 100%;
+  height: 30px;
+  overflow: scroll;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background: none;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  color: rgba(101, 101, 101, 0.8);
+  overflow: scroll;
+}
+.users_select_box input::placeholder {
+  color: rgba(101, 101, 101, 0.8);
+}
+
+.us_datalist {
+  overflow: scroll;
+  max-height: 30px;
+}
+
+.us_option {
+  overflow: scroll;
+}
+
+.users_select_box {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.users_select_box select {
+  width: 97%;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  background: none;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000;
+}
+
+/* ! Resize table style */
+.users_table {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns:
+    minmax(90px, 6fr)
+    minmax(150px, 3fr)
+    minmax(200px, 3fr)
+    minmax(150px, 4fr)
+    minmax(150px, 10fr)
+    minmax(150px, 8fr)
+    minmax(150px, 1fr)
+    minmax(150px, 1fr);
+}
+
+@media all and (max-width: 1420px) {
+  .users_table {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    overflow: auto;
+    grid-template-columns:
+      minmax(125px, 6fr)
+      minmax(150px, 3fr)
+      minmax(200px, 3fr)
+      minmax(150px, 4fr)
+      minmax(150px, 10fr)
+      minmax(150px, 8fr)
+      minmax(150px, 1fr)
+      minmax(150px, 1fr);
+  }
+}

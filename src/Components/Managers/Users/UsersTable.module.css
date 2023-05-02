@@ -1,0 +1,326 @@
+/* ! Dialog Content start */
+
+/* Top */
+
+.edit_users_title {
+  width: 500px;
+  height: 65px;
+  border-bottom: 3px solid #004665;
+  display: flex;
+  align-items: center;
+}
+
+.edit_users_title p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin-left: 33px;
+}
+
+/* main box */
+.us_edit__main_box {
+  width: 500px;
+  height: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.us_input {
+  width: 485px;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.us_edit__input_top {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.us_edit__inp_cont {
+  width: 230px;
+  height: 53px;
+}
+
+.us_edit__inp_cont label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.us_edit__inp_cont input {
+  width: 215px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+}
+
+.us_edit_btn {
+  width: 480px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_btn {
+  width: 117px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.main_btn__p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+.edit_select_cont {
+  width: 339px;
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.edit_select_cont select {
+  width: 325px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #004665;
+}
+
+.edit_select_cont label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+/* bottom */
+.edit_us_btm {
+  width: 500px;
+  height: 64px;
+  border-top: 3px solid #004665;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.edit_us_btm button {
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  cursor: pointer;
+}
+
+.us_close_btn {
+  width: 53px;
+}
+
+.us_save_btn {
+  width: 41px;
+  margin: 17px 30px 17px 25px;
+}
+
+input::placeholder {
+  color: #004665;
+}
+
+/* ! Dialog Content end */
+
+/* ! */
+.users_edit__confirm {
+  width: 500px;
+  height: 461px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -1000px;
+  left: calc(50% - 220px);
+  border-radius: 15px;
+}
+
+.users_edit__confirm.users_show {
+  top: calc(70% - 140px);
+}
+
+.users_edit__confirm_content {
+  width: 100%;
+  height: 461px;
+}
+
+.users_edit__overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.users_edit__confirm.users_show + .users_edit__overlay {
+  display: block;
+}
+
+/* ! Users Edit end */
+
+/* ! Users Status start */
+/* ? Top */
+.status_users_title {
+  width: 450px;
+  height: 65px;
+  border-bottom: 3px solid #004665;
+  display: flex;
+  align-items: center;
+}
+
+.status_users_title p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin-left: 33px;
+}
+
+/* ? main box */
+.us_status__content {
+  width: 93%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.us_status__content input {
+  width: 335px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.us_status__content {
+  height: 100%;
+}
+
+.us_status__content input::placeholder {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #004665;
+}
+
+/* ? bottom */
+.us_status_btm {
+  width: 450px;
+  height: 64px;
+  border-top: 3px solid #004665;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.us_status_btm button {
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  cursor: pointer;
+}
+
+/* ! */
+.users_status__confirm {
+  width: 450px;
+  /* height: 213px; */
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -1000px;
+  left: calc(50% - 220px);
+  border-radius: 15px;
+}
+
+.users_status__confirm.users_show {
+  top: calc(80% - 10px);
+}
+
+.users_status__confirm_content {
+  width: 100%;
+  height: 213px;
+}
+
+.users_edit__overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.users_status__confirm.users_show + .users_edit__overlay {
+  display: block;
+}
+/* ! Users Edit end */
+
+.ToggleSwitch {
+  background: linear-gradient(#cccccc6b, #eeeeee82);
+  border: 1px solid #004665;
+  height: 1em;
+  width: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.ToggleSwitch .knob {
+  position: relative;
+
+  border: 1px solid #004665;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ffffff;
+  border-radius: 50%;
+  top: 0.05rem;
+  left: 0.1em;
+  transition: left 0.3s ease-out;
+}
+.ToggleSwitch .knob.active {
+  left: 1em;
+  background-color: #004665;
+  width: 0.8em;
+  height: 0.8em;
+}

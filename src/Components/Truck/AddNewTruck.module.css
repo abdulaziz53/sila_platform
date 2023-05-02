@@ -1,0 +1,228 @@
+.add_tr_btn {
+  width: 120px;
+  height: 30px;
+  /* background: rgba(146, 167, 199, 0.28); */
+  background: none;
+  border: 3px solid #dcdcdc;
+  border-radius: 5px;
+  /* border: none; */
+  cursor: pointer;
+}
+
+.add_tr_btn p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 7px;
+  color: #dcdcdc;
+  margin: 0;
+}
+/*  */
+
+/* ! Add Truck start */
+
+/* ? top start */
+.edit_truck_title {
+  width: 100%;
+  height: 65px;
+  border-bottom: 3px solid #004665;
+  display: flex;
+  align-items: center;
+}
+
+.edit_truck_title p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin-left: 33px;
+}
+/* ? top end */
+
+/* ? main box start */
+.tr_edit__main_box {
+  width: 100%;
+  height: 383px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.tr_main_inner {
+  width: 95%;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inner_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner_cont {
+  width: 355px;
+  height: 53px;
+  display: flex;
+}
+
+.inner_cont.inner_2_cont label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.inner_cont input {
+  width: 340px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+}
+
+.inner_cont_2 input {
+  width: 340px;
+  height: 30px;
+  background: rgba(28, 36, 52, 0.67);
+  border-radius: 5px;
+  border: none;
+}
+
+.inner_cont input::placeholder {
+  padding-left: 10px;
+}
+.inner_2_cont input::placeholder {
+  padding-left: 10px;
+}
+
+.inner_cont select {
+  padding-left: 10px;
+  height: 30px;
+  overflow: scroll;
+}
+.inner_cont option {
+  font-size: 20px;
+  height: 30px;
+  overflow: scroll;
+}
+
+.inner_2_cont select {
+  padding-left: 10px;
+}
+
+.inner_cont_2 input::placeholder {
+  color: #ffffff;
+}
+
+.inner_cont select {
+  width: 345px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  color: #004665;
+}
+
+.inner_2_cont {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-content: center;
+}
+
+.inner_2_cont input {
+  width: 206px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+}
+
+.inner_2_cont select {
+  width: 210px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  color: #004665;
+}
+
+/* ? main box end */
+
+/* ? bottom start */
+.edit_tr_btm {
+  width: 100%;
+  height: 64px;
+  border-top: 3px solid #004665;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.edit_tr_btm button {
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  border: none;
+}
+
+.tr_close_btn {
+  width: 53px;
+}
+
+.tr_save_btn {
+  width: 41px;
+  margin: 17px 30px 17px 25px;
+}
+
+input::placeholder {
+  color: #004665;
+}
+/* ? bottom end */
+/* ! Add Truck end */
+
+/* ! */
+
+.addTr_confirm {
+  width: 800px;
+  height: 512px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -1000px;
+  left: calc(40% - 200px);
+  border-radius: 15px;
+}
+
+.addTr_confirm.addTr_show {
+  top: calc(50% - 10px);
+}
+
+.addTr_confirm_content {
+  width: "800px";
+  height: "512px";
+}
+
+.addTr_overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.addTr_confirm.addTr_show + .addTr_overlay {
+  display: block;
+}

@@ -1,0 +1,640 @@
+/* top content */
+.top_main_add {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #004665;
+}
+
+.top_main_add p {
+  width: 100%;
+  height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin: 20px 0px 20px 33px;
+}
+
+/* main content */
+.all_edit_main__cont {
+  width: 100%;
+  height: 451px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.left_cont,
+.right_cont {
+  width: 383px;
+  height: 335px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.inp_box {
+  width: 339px;
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inp_box input {
+  width: 94%;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #004665;
+}
+
+.inp_box select {
+  width: 98%;
+  height: 36px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #004665;
+}
+
+.inp_box label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+/* bottom content */
+.main_bottom {
+  width: 100%;
+  grid-template: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-top: 3px solid #004665;
+}
+
+.all_close_btn {
+  width: 53px;
+}
+
+.all_save_btn {
+  width: 45px;
+}
+
+.all_cont_btn {
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+/*  */
+
+.confirm_all {
+  width: 800px;
+  height: 600px;
+
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(40% - 220px);
+  border-radius: 15px;
+}
+
+.confirm_all.show_all {
+  top: calc(27% - 140px);
+}
+
+.all_confirm__content {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay_all {
+  width: 100%;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm_all.show_all + .overlay_all {
+  display: block;
+}
+
+.all_add_btn {
+  background: none;
+  border: 3px solid #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  width: 151px;
+  height: 30px;
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding: 0;
+}
+
+.all_add_btn p {
+  display: flex;
+  width: 120px;
+  height: 15px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.all_add_btn i {
+  display: none;
+}
+
+label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.edit_close_btn {
+  width: 53px;
+}
+
+.edit_save_btn {
+  width: 41px;
+}
+
+.edit_cont_btn {
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.confirm_edit {
+  width: 800px;
+  height: 600px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(40% - 220px);
+  border-radius: 15px;
+}
+
+.confirm_edit.show_edit {
+  top: calc(35% - 140px);
+}
+
+.edit_confirm-content {
+  width: 800px;
+  height: 451px;
+}
+
+.overlay_edit {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm_edit.show_edit + .overlay_edit {
+  display: block;
+}
+
+.button {
+  background: none;
+  border: 3px solid #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+}
+
+/* ! Status */
+
+.status_main_block {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #004665;
+}
+
+.status_main_block p {
+  width: 100%;
+  font-weight: 600;
+  line-height: 24;
+  color: #011a38;
+  margin: 20px 0px 20px 33px;
+}
+.status_content {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.status_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 65px;
+  border-top: 3px solid #004665;
+  margin: 0;
+}
+
+.status_close_btn {
+  width: 53px;
+}
+
+.status_save_btn {
+  width: 41px;
+}
+
+.status_cont_btn {
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.confirm_status {
+  width: 800px;
+  height: 390px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(40% - 220px);
+  border-radius: 15px;
+}
+
+.confirm_status.show_status {
+  top: calc(45% - 140px);
+}
+
+.status_confirm_content {
+  width: 800px;
+  height: 100%;
+}
+
+.overlay_status {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm_status.show_status + .overlay_status {
+  display: block;
+}
+
+.status_text p {
+  margin: 0;
+  width: 338px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #000000;
+}
+
+.status_input {
+  width: 339px;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+}
+
+.status_input label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.status_input input {
+  margin: 0;
+  width: 325px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  /* margin-bottom: 10px; */
+}
+
+/* ! Delete start */
+
+.delete_main_block {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #004665;
+}
+
+.delete_main_block p {
+  width: 100%;
+  height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin: 20px 0px 20px 33px;
+}
+
+.delete_content {
+  width: 100%;
+  height: 246px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.delete_cont_btn {
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.delete_close_btn {
+  width: 53px;
+}
+
+.delete_save_btn {
+  width: 41px;
+}
+
+.confirm_delete {
+  width: 800px;
+  height: 395px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(40% - 220px);
+  border-radius: 15px;
+}
+
+.confirm_delete.show_delete {
+  top: calc(45% - 140px);
+}
+
+.delete_confirm_content {
+  width: 800px;
+  height: 451px;
+}
+
+.overlay_delete {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm_delete.show_delete + .overlay_delete {
+  display: block;
+}
+
+.delete_text p {
+  margin: 0;
+  width: 338px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #000000;
+}
+
+.delete_input {
+  width: 339px;
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete_input label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.delete_input input {
+  margin: 0;
+  width: 325px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+}
+
+.delete_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 65px;
+  border-top: 3px solid #004665;
+  margin: 0;
+}
+
+/* ! edit adaptive start */
+@media (max-width: 1030px) {
+  .confirm_edit {
+    width: 800px;
+    left: calc(33% - 220px);
+  }
+  .confirm_edit.show_edit {
+    top: calc(25% - 140px);
+  }
+  .inp_box_1 {
+    max-width: 100px;
+  }
+  .inp_box_2 {
+    max-width: 200px;
+  }
+  .inp_box_3 {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 970px) {
+  .inp_box_1 {
+    max-width: 75px;
+  }
+  .inp_box_2 {
+    max-width: 150px;
+  }
+  .inp_box_3 {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 930px) {
+  .inp_box_1 {
+    max-width: 40px;
+  }
+  .inp_box_2 {
+    max-width: 80px;
+  }
+  .inp_box_3 {
+    max-width: 75px;
+  }
+  .slc_box {
+    max-width: 70px;
+  }
+}
+@media (max-width: 910px) {
+  .confirm_edit {
+    width: 750px;
+    height: 540px;
+    left: calc(35% - 220px);
+  }
+  .confirm_edit.show_edit {
+    top: calc(25% - 140px);
+  }
+
+  .all_edit_main__cont {
+    height: 400px;
+  }
+  .inp_box_1 {
+    max-width: 40px;
+  }
+  .inp_box_2 {
+    max-width: 60px;
+  }
+  .inp_box_3 {
+    width: 65px;
+  }
+  .slc_box {
+    width: 60px;
+  }
+}
+/* ! Edit apadtive end */
+
+/* ! Toggle Sitch start */
+.ToggleSwitch {
+  background: linear-gradient(#cccccc6b, #eeeeee82);
+  border: 1px solid #004665;
+  height: 1em;
+  width: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.ToggleSwitch .knob {
+  position: relative;
+
+  border: 1px solid #004665;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ffffff;
+  border-radius: 50%;
+  top: 0.05rem;
+  left: 0.1em;
+  transition: left 0.3s ease-out;
+}
+.ToggleSwitch .knob.active {
+  left: 1em;
+  background-color: #004665;
+  width: 0.8em;
+  height: 0.8em;
+}
+/* ! Toggle Sitch end */
+
+/* ! Status and Delete adaptive start */
+@media (max-width: 1024px) {
+  .confirm_status {
+    width: 750px;
+    left: calc(38% - 220px);
+  }
+  .confirm_status.show_status {
+    top: calc(42% - 140px);
+  }
+}
+@media (max-width: 910px) {
+  .confirm_status {
+    width: 700px;
+  }
+  .confirm_status.show_status {
+    top: calc(40% - 140px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .confirm_delete {
+    width: 750px;
+    left: calc(38% - 220px);
+  }
+  .confirm_delete.show_delete {
+    top: calc(42% - 140px);
+  }
+}
+@media (max-width: 910px) {
+  .confirm_delete {
+    width: 700px;
+    left: calc(38% - 220px);
+  }
+}
+
+/* ! Status and Delete adaptive end */

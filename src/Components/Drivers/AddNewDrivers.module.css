@@ -1,0 +1,260 @@
+.add_dr_btn {
+  width: 120px;
+  height: 30px;
+  /* background: rgba(146, 167, 199, 0.28); */
+  background: none;
+  border-radius: 5px;
+  border: 3px solid #dcdcdc;
+  cursor: pointer;
+}
+
+.add_dr_btn p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 7px;
+  color: #dcdcdc;
+  margin: 0;
+}
+/*  */
+
+/* ! Add Drivers start */
+
+/* ? top start */
+.add_drivers_title {
+  width: 100%;
+  height: 65px;
+  border-bottom: 3px solid #004665;
+  display: flex;
+  align-items: center;
+}
+
+.add_drivers_title p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin-left: 33px;
+}
+/* ? top end */
+
+/* ? main start */
+.add_dr_main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.dr_main_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 760px;
+  height: 53px;
+}
+
+.dr_main_cont_2 {
+  width: 760px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.dr_main_cont_3 {
+  width: 760px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.cont_inner {
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+  height: 53px;
+}
+
+.cont_inner_2 {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 53px;
+}
+
+.cont_inner_3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 460px;
+  height: 53px;
+}
+
+.cont_inner_sl {
+  width: 250px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dr_main_cont_bt {
+  width: 200px;
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dr_main_cont_2 input {
+  width: 230px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+}
+
+.cont_inner input {
+  width: 341px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+}
+
+.cont_inner_2 input {
+  width: 216px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+}
+
+.cont_inner_3 input {
+  width: 446px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+}
+
+.cont_inner_sl select {
+  width: 236px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  color: #004665;
+}
+
+.dr_main_cont_bt select {
+  width: 186px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  color: #004665;
+}
+
+.dr_main_cont_2 i {
+  color: #004665;
+  position: relative;
+  left: -5%;
+}
+
+input::placeholder {
+  color: #004665;
+}
+
+label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+/* ? main end */
+
+/* ? bottom start */
+.add_dr_btm {
+  width: 100%;
+  height: 64px;
+  border-top: 3px solid #004665;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.add_dr_btm button {
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  border: none;
+}
+
+.dr_close_btn {
+  width: 53px;
+}
+
+.dr_save_btn {
+  width: 41px;
+  margin: 17px 30px 17px 25px;
+}
+
+/* ? bottom end */
+
+/* ! Add Drivers end */
+
+/* ! */
+.addDr_confirm {
+  width: 800px;
+  height: 494px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -1000px;
+  left: calc(40% - 200px);
+  border-radius: 15px;
+}
+
+.addDr_confirm.addDr_show {
+  top: calc(40% - 10px);
+}
+
+.addDr_confirm_content {
+  width: "800px";
+  height: "494px";
+}
+.dr_add__main_box {
+  width: 100%;
+  height: 365px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.addDr_overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.addDr_confirm.addDr_show + .addDr_overlay {
+  display: block;
+}

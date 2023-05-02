@@ -1,0 +1,245 @@
+.addNewRoles {
+  /* margin-top: 28px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+
+.role_add_btn {
+  width: 130px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #dcdcdc;
+  border-radius: 5px;
+  background: none;
+  font-weight: 600;
+  font-style: 12px;
+  line-height: 15px;
+  color: #dcdcdc;
+}
+
+/* ! Roles Content start */
+
+.title {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #004665;
+}
+
+.title p {
+  color: #011a38;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Main box */
+
+.main_box {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Top */
+
+.top_input {
+  width: 340px;
+  height: 54px;
+  margin-bottom: 15px;
+}
+
+.top_input label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(23, 23, 23, 0.76);
+}
+
+.role_input {
+  width: 325px;
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #011a38;
+}
+
+.main_box .role_acc {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: #178ba5;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* Roles Access */
+
+.roles_access {
+  width: 100%;
+  height: 385px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.table_top_first {
+  width: 764px;
+  height: 25px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 200px 100px 150px 100px 100px;
+  /* grid-template-rows: 80px auto 80px; */
+  column-gap: 10px;
+  row-gap: 10px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.table_top_first p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.table_top_second {
+  width: 764px;
+  height: 25px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: start;
+  grid-template-columns: 200px 100px 150px 100px 100px;
+  /* grid-template-rows: 80px auto 80px; */
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.table_top_second__cont {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.table_top_second .table_top_second__cont p {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.table_top_second__cont input {
+  width: 15px;
+  height: 15px;
+  background: #004665;
+}
+
+/* .table_inp {
+    border-color: #004665;
+  } */
+
+/* ! Roles Content end */
+
+/* ! Dialog start */
+
+.role_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 65px;
+  border-top: 3px solid #004665;
+}
+
+.roles__ok_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.roles_confirm {
+  max-width: 800px;
+  height: 630px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -700px;
+  left: calc(40% - 180px);
+  border-radius: 15px;
+}
+
+.roles_confirm.roles_show {
+  top: calc(65% - 140px);
+}
+
+.roles__confirm_content {
+  width: 100%;
+  height: 630px;
+}
+
+.roles_overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.roles_confirm.roles_show + .roles_overlay {
+  display: block;
+}
+
+.button {
+  background: none;
+  border: 3px solid #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+}
+
+/* ! Dialog end */
+
+@media (max-width: 900px) {
+  .roles_confirm {
+    width: 720px;
+    left: calc(33% - 180px);
+  }
+  .roles_access {
+    width: 98%;
+  }
+  .table_top_first {
+    width: 98%;
+  }
+  .table_top_second {
+    width: 98%;
+  }
+}
